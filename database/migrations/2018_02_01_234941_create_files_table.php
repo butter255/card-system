@@ -1,0 +1,2 @@
+<?php
+use Illuminate\Support\Facades\Schema; use Illuminate\Database\Schema\Blueprint; use Illuminate\Database\Migrations\Migration; use Illuminate\Support\Facades\DB; class CreateFilesTable extends Migration { public function up() { Schema::create('files', function (Blueprint $sp2bac3d) { $sp2bac3d->increments('id'); $sp2bac3d->integer('user_id'); $sp2bac3d->string('driver'); $sp2bac3d->string('path'); $sp2bac3d->string('url'); $sp2bac3d->timestamp('created_at')->useCurrent(); }); } public function down() { Schema::dropIfExists('files'); } }
