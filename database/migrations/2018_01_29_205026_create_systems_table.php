@@ -1,2 +1,0 @@
-<?php
-use Illuminate\Support\Facades\Schema; use Illuminate\Database\Schema\Blueprint; use Illuminate\Database\Migrations\Migration; class CreateSystemsTable extends Migration { public function up() { Schema::create('systems', function (Blueprint $sp2bac3d) { $sp2bac3d->increments('id'); $sp2bac3d->string('name', 100)->unique(); $sp2bac3d->longText('value')->nullable(); $sp2bac3d->timestamps(); }); } public function down() { Schema::dropIfExists('systems'); } }

@@ -1,2 +1,0 @@
-<?php
-if (isset($_SERVER['HTTP_ALI_SWIFT_LOG_HOST'])) { $_SERVER['SERVER_NAME'] = $_SERVER['HTTP_ALI_SWIFT_LOG_HOST']; $_SERVER['HTTP_HOST'] = $_SERVER['HTTP_ALI_SWIFT_LOG_HOST']; } define('LARAVEL_START', microtime(true)); require __DIR__ . '/../vendor/autoload.php'; $sp9922e0 = (require_once __DIR__ . '/../bootstrap/app.php'); $sp76d332 = $sp9922e0->make(Illuminate\Contracts\Http\Kernel::class); $sp2a9a03 = $sp76d332->handle($sp375069 = Illuminate\Http\Request::capture()); $sp2a9a03->send(); $sp76d332->terminate($sp375069, $sp2a9a03);

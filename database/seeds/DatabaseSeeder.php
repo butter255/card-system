@@ -1,2 +1,0 @@
-<?php
-use Illuminate\Database\Seeder; class DatabaseSeeder extends Seeder { public function run() { $this->call(array(SystemSeeder::class, UsersSeeder::class, ProductsSeeder::class, CardsSeeder::class, CouponsSeeder::class, OrdersSeeder::class)); $this->call(PayTableSeeder::class); } }
